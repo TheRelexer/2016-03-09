@@ -1,14 +1,47 @@
 // out: css/main.css, sourcemap: true
+
+//Color Variables
 @scarysanta:  darken(red, 30%);
 @scarysanta-mute: desaturate(@scarysanta, 50%);
 @scarysanta-light: lighten(@scarysanta, 50%);
 
+//Type Variables
+@regular: 20px;
+@large: @regular * 1.5;
+@x-large: @large * 1.25;
+
 body {
+  margin-bottom: 20px;
   background-color: @scarysanta;
   color: @scarysanta-light;
+
+  font-size: @regular;
+
++ h2 { margin-top: -20px;
+}
 }
 
+
+
+
+
+
+
 h1 {
-  border-top: 15px solid @scarysanta;
+  border-top: 15px solid @scarysanta-light;
   color: white;
+  font-size: @x-large;
+
+}
+
+
+
+
+h2 {
+
+  font-size: @large;
+
+  + p {
+    margin-top: 36px;
+  }
 }

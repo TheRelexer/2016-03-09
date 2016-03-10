@@ -1,8 +1,20 @@
 body {
+  margin-bottom: 20px;
   background-color: #660000;
   color: #ff6666;
+  font-size: 20px;
+}
+body + h2 {
+  margin-top: -20px;
 }
 h1 {
-  border-top: 15px solid #660000;
+  border-top: 15px solid #ff6666;
   color: white;
+  font-size: 37.5px;
+}
+h2 {
+  font-size: 30px;
+}
+h2 + p {
+  margin-top: 36px;
 }
