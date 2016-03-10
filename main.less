@@ -4,6 +4,8 @@
 @scarysanta:  darken(red, 30%);
 @scarysanta-mute: desaturate(@scarysanta, 50%);
 @scarysanta-light: lighten(@scarysanta, 50%);
+@scaryelf: darken(green, 15%);
+@scaryelf-light: lighten(@scaryelf, 20%);
 
 //Type Variables
 @regular: 20px;
@@ -11,9 +13,11 @@
 @x-large: @large * 1.25;
 
 body {
-  margin-bottom: 20px;
+  font-family: 'Allan', cursive;
+  font-style: normal;
+ margin-bottom: 20px;
   background-color: @scarysanta;
-  color: @scarysanta-light;
+  color: @scaryelf-light;
 
   font-size: @regular;
 
@@ -28,7 +32,8 @@ body {
 
 
 h1 {
-  border-top: 15px solid @scarysanta-light;
+  font-family: 'Sue Ellen Francisco', cursive;
+  border-top: 15px solid @scaryelf;
   color: white;
   font-size: @x-large;
 
@@ -43,5 +48,26 @@ h2 {
 
   + p {
     margin-top: 36px;
+  }
+}
+
+
+img {
+  flot: left;
+
+  width: 300px;
+
+  margin-left: 20px;
+  margin-right: 0px;
+
+}
+
+p {
+
+  img {
+    float: right;
+    width: 100px;
+
+
   }
 }

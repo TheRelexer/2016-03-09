@@ -1,14 +1,17 @@
 body {
+  font-family: 'Allan', cursive;
+  font-style: normal;
   margin-bottom: 20px;
   background-color: #660000;
-  color: #ff6666;
+  color: #009a00;
   font-size: 20px;
 }
 body + h2 {
   margin-top: -20px;
 }
 h1 {
-  border-top: 15px solid #ff6666;
+  font-family: 'Sue Ellen Francisco', cursive;
+  border-top: 15px solid #003400;
   color: white;
   font-size: 37.5px;
 }
@@ -17,4 +20,14 @@ h2 {
 }
 h2 + p {
   margin-top: 36px;
+}
+img {
+  flot: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+p img {
+  float: right;
+  width: 100px;
 }
