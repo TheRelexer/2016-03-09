@@ -1,5 +1,14 @@
 // out: css/main.css, sourcemap: true
+@scarysanta:  darken(red, 30%);
+@scarysanta-mute: desaturate(@scarysanta, 50%);
+@scarysanta-light: lighten(@scarysanta, 50%);
 
 body {
-  background-color: darken(red, 30%);
+  background-color: @scarysanta;
+  color: @scarysanta-light;
+}
+
+h1 {
+  border-top: 15px solid @scarysanta;
+  color: white;
 }
