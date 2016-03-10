@@ -8,9 +8,9 @@
 @scaryelf-light: lighten(@scaryelf, 20%);
 
 //Type Variables
-@regular: 20px;
+@regular: 1em;
 @large: @regular * 1.5;
-@x-large: @large * 1.25;
+@x-large: @large * 2;
 
 body {
   font-family: 'Allan', cursive;
@@ -19,14 +19,17 @@ body {
   background-color: @scarysanta;
   color: @scaryelf-light;
 
-  font-size: @regular;
+  font-size: @large;
 
 + h2 { margin-top: -20px;
 }
 }
 
 
-
+.page-container {
+  width: 90%;
+  margin: 0 auto;
+}
 
 
 
@@ -35,7 +38,7 @@ h1 {
   font-family: 'Sue Ellen Francisco', cursive;
   border-top: 15px solid @scaryelf;
   color: white;
-  font-size: @x-large;
+  font-size: @large;
 
 }
 
@@ -43,11 +46,13 @@ h1 {
 
 
 h2 {
+  line-height: 10px;
 
   font-size: @large;
 
   + p {
     margin-top: 36px;
+    font-size: @regular
   }
 }
 
@@ -55,7 +60,7 @@ h2 {
 img {
   flot: left;
 
-  width: 300px;
+  width: 30%;
 
   margin-left: 20px;
   margin-right: 0px;
@@ -66,8 +71,33 @@ p {
 
   img {
     float: right;
-    width: 100px;
+    width: 200px;
+    margin-top: 15px;
 
+
+  }
+}
+
+
+
+
+
+
+
+
+
+//Breakpoints
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: @x-large;
+  }
+  .page-container {
+    width: 80%;
+  }
+
+
+  body {
+    font-size: 1.2em;
 
   }
 }

@@ -4,30 +4,48 @@ body {
   margin-bottom: 20px;
   background-color: #660000;
   color: #009a00;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 body + h2 {
   margin-top: -20px;
+}
+.page-container {
+  width: 90%;
+  margin: 0 auto;
 }
 h1 {
   font-family: 'Sue Ellen Francisco', cursive;
   border-top: 15px solid #003400;
   color: white;
-  font-size: 37.5px;
+  font-size: 1.5em;
 }
 h2 {
-  font-size: 30px;
+  line-height: 10px;
+  font-size: 1.5em;
 }
 h2 + p {
   margin-top: 36px;
+  font-size: 1em;
 }
 img {
   flot: left;
-  width: 300px;
+  width: 30%;
   margin-left: 20px;
   margin-right: 0px;
 }
 p img {
   float: right;
-  width: 100px;
+  width: 200px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 3em;
+  }
+  .page-container {
+    width: 80%;
+  }
+  body {
+    font-size: 1.2em;
+  }
 }
